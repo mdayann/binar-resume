@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- Tugas
+1. Tulis rumus Pythagoras secara tepat -> Wildan
+2. Buat Tabel, isi terserah -> Anisa
+3. Buat list, isi terserah -> Dayan
+4. Tulis tahapan git add, commit, dan push dalam blok kode (bukan tulisan biasa) -> Dewa
+5. Buat input teks-> Hizki
+6. Buat input radio -> Rima
+7. Buat input dropdown -> Baha
+8. Buat tombol yang bila diklik mengarah ke suatu website -> Andra
+9. Masukkan gambar beserta captionnya -> Inu
+10. Masukkan media video/audio/multimedia lain -> hanif -->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>repl.it</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Andra -->
+  <h1>Menuju Youtube</h1>
+
+  <p>Klik tombol berikut untuk menuju halaman Youtube</p>
+
+  <button onclick="window.location.href = 'https://www.youtube.com';">Klik di sini</button>
+  <!-- ada bentuk button dengan link yang lebih ideal -->
+
+
+  <!-- Anisa -->
+  <table style="width:100%">
+    <tr>
+      <th>NAMA</th>
+      <th>KELAS</th>
+      <th>CITA-CITA</th>
+    </tr>
+    <tr>
+      <td>alfi</td>
+      <td>aman</td>
+      <td>dokter</td>
+    </tr>
+    <tr>
+      <td>baim</td>
+      <td>tentram</th>
+      <td>polisi</td>
+    </tr>
+    <tr>
+      <td>raja</td>
+      <td>nyaman</td>
+      <td>tentara</td>
+    </tr>
+  </table>
+
+  <!-- Baha -->
+  <!-- <ul>
+
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Jadwal Kelas</a>
+              <ol class="sub jadwal kelas">
+                  <li><a href="">Kelas Pagi</a></li>
+                  <li><a href="">Kelas Siang</a></li>
+                  <li><a href="">Kelas Sore</a></li>
+                  <li><a href="">Kelas Malam</a></li>
+              </ol>
+          </li>
+          <li><a href="#">Hubungi Kami</a></li>
+      </ul> -->
+  <!-- Dropdown adl fitur dalam html u/ membuat desain menu yang mempunyai turunan menu.
+        di contoh ada Home, Jadwal Kelas, & Hubungi kami. Pada main menu Jadwal kelas ada turunan kelas pagi, siang, sore, & malam yg menunjukkan bagian dari Jadwal kelas. Jika di website yg sudah jadi, dlm href="" akan diisi link yg bisa ngedirect ke halaman tujuan-->
+  <label for="cars">Mobil</label>
+  <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <!-- End Baha -->
+
+  <!-- Dewa -->
+  <h2 align="center">Tutorial Git</h2>
+
+  <ol type="1">
+    <li>Pertama,pada terminal dalam direktori ketik perintah <code>git status </code> untuk melihat status repositorinya
+    </li>
+
+    <li>Jika ada file yang berubah dan belum ditambah ke git ketik <code> git add 'nama_file' </code> atau bisa
+      <code> git add . </code> untuk menambah semua file ke git.</li>
+
+    <li>Setelah itu, perlu kita commited agar semua perubahan disimpan oleh Git dengan cara
+      <code> git commit -m "komen" </code>.</li>
+
+    <li>Setelah itu, kita kirim ke repositori online github dengan cara <code> git push origin master </code>.</li>
+  </ol>
+
+
+
+  <!-- Hanif -->
+
+  <audio src="https://soundcloud.com/user-113554042/intentions-feat-quavo#t=0:02" controls></audio>
+  <!-- end hanif-->
+
+  <br>
+  <label for="judul">Input</label>
+  <input type="text" name="judul" /> BCA Synrgy Academy
+  <h2> HTML </h2>
+  <p> Mencoba membuat paragraf tapi nggak tau mau nulis apa </p>
+  <p> Hari ini belajar membuat html bersama-sama </p><!-- hizki -->
+
+  <!-- Dayan -->
+  <h2>Unordered List</h2>
+
+  <ul>
+    <li>Satu</li>
+    <li>Dua</li>
+    <li>Tiga</li>
+  </ul>
+
+  <h2>Ordered List</h2>
+
+  <ol>
+    <li>Pertama</li>
+    <li>Kedua</li>
+    <li>Ketiga</li>
+  </ol>
+
+  <h2>Description List</h2>
+
+  <dl>
+    <dt>Kesatu</dt>
+    <dd>Ini adalah Deskripsi List Pertama</dt>
+    <dt>Kedua</dt>
+    <dd>Ini adalah Deskripsi List Kedua</dd>
+    <dt>Ketiga</dt>
+    <dd>Ini adalah Deskripsi Item Ketiga</dd>
+  </dl>
+
+  <!-- end dayan -->
+
+  <!-- Inu  -->
+  <figure>
+    <!--digunakan untuk membungkus gambar yang disertai keterangan -->
+    <img src="https://miro.medium.com/max/1400/1*jtneAE_hrmy29furvyoB4g.png" style="width:300px;height:200px;"
+      alt="Logo Binar Academy">
+    <figcaption>Gambar 1 - Binar Academy Logo.</figcaption>
+  </figure>
+  <!-- End Inu  -->
+
+  <!-- Rima -->
+  <p>Belajar HTML</p>
+  <input type="radio" id="HTML" name="learn" value="HTML"> HTML
+  <br />
+  <input type="radio" id="CSS" name="learn" value="CSS"> CSS
+  <br />
+  <input type="radio" id="GIT" name="learn" value="GIT"> GIT
+  <br />
+
+
+  <!-- wildan -->
+  <p> Rumus Phytagoras: </p>
+  <p><var>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></var>.</p>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
