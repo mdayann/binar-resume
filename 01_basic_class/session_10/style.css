@@ -1,0 +1,29 @@
+.bulat {
+  height: 60px;
+  width: 60px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.kotak {
+  height: 60px;
+  width: 60px;
+  background-color: blue;
+  display: inline-block;
+}
+
+.random1 {
+  height: 60px;
+  width: 60px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.random2 {
+  height: 60px;
+  width: 60px;
+  background-color: yellow;
+  display: inline-block;
+}
