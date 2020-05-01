@@ -1,39 +1,23 @@
-//definisi class
 class eMoneyAccount {
-  //definisi constructor
-  //asumsi: user mendaftar dengan nama & telp, dan saldo awal 0
   constructor(nameInit, phoneInit) {
     this.name = nameInit;
     this.phone = phoneInit;
     this.amount = 0;
   }
 
-  //ketika topup, saldo akan bertambah sesuai jumlah yang di topup
   topUp(value) {
-    //pastikan tipe data value adalah number
     this.amount += value;
   }
 
-  //membelanjakan sejumlah value
   spend(value) {
-    //pastikan tipe data value adalah number
-    //apabila saldo pengguna < value, spend gagal
-
     this.amount -= value;
   }
 
-  //recipient adalah object eMoney Account lain
-  //value adalah jumlah transfer
   transfer(recipient, value) {
-    //pastikan tipe data recipient adalah eMoneyAccount
-    //pastikan tipe data value adalah number
-    //apabila saldo pengguna < value, transfer gagal
-
     recipient.amount += value;
     this.amount -= value;
   }
 
-  //setter atribut nama dan no hp
   setName(newName) {
     this.name = newName;
   }
@@ -46,22 +30,10 @@ class eMoneyAccount {
 const dayanAccount = new eMoneyAccount('Dayan', '085786');
 const testAccount = new eMoneyAccount('Test', '085786');
 
-
-
-
-
-
-
-
-
 const buttonAmount = document.getElementById('btAmount');
 const buttontopUp = document.getElementById('btTopUp');
 const buttonSpend = document.getElementById('btSpend');
 const buttonTransfer = document.getElementById('btTransfer');
-
-
-
-
 
 //Check Amount
 
@@ -71,8 +43,6 @@ buttonAmount.addEventListener('click', () => {
   areaAmount.appendChild(showResult);
   showResult.innerHTML = `Rp. ${dayanAccount.amount}`;
 });
-
-
 
 //Method Top Up
 
@@ -125,33 +95,30 @@ buttonSpend.addEventListener('click', () => {
   }
 });
 
-
 buttonTransfer.addEventListener('click', () => {
-  const transferInput = parseInt(document.getElementById('inTransfer').value, 10);
+  const transferInput = parseInt(
+    document.getElementById('inTransfer').value,
+    10
+  );
   const repTransfer = document.getElementById('repTransfer').value;
-
 
   var repConvert = eval(repTransfer);
   console.log(typeof repConvert);
 
-
-
-
-  if (typeof transferInput !== 'number' ) {
+  if (typeof transferInput !== 'number') {
     alert('Transfer Failed');
     console.log('Transfer Failed');
   } else if (transferInput > dayanAccount.amount) {
     alert('Transfer Failed, Amount is Insufficient');
     console.log('Amount is Insufficient');
-  } else if ((repConvert instanceof eMoneyAccount) === false) {
+  } else if (repConvert instanceof eMoneyAccount === false) {
     alert('Transfer Failed, Recipient is not registered');
-  }  else {
-    dayanAccount.transfer(repConvert, transferInput)
+  } else {
+    dayanAccount.transfer(repConvert, transferInput);
     alert(`Succes, Transfer Amount : ${transferInput}`);
     const areaTransfer = document.getElementById('areaTransfer');
     const hasilTransfer = document.createElement('p');
     hasilTransfer.innerHTML = `Rp. - ${transferInput}`;
     areaTransfer.appendChild(hasilTransfer);
-
   }
 });

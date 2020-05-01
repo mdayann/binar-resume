@@ -1,0 +1,30 @@
+[
+  {
+    "city": "Oslo",
+    "country": "Norway"
+  },
+  {
+    "city": "Los Angeles",
+    "country": "USA"
+  },
+  {
+    "city": "Riyadh",
+    "country": "Saudi Arabia"
+  },
+  {
+    "city": "Seoul",
+    "country": "South Korea"
+  },
+  {
+    "city": "Kuala Lumpur",
+    "country": "Malaysia"
+  },
+  {
+    "city": "Yogyakarta",
+    "country": "Indonesia"
+  },
+  {
+    "city": "Lima",
+    "country": "Peru"
+  }
+]
